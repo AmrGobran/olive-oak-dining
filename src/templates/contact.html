@@ -1,0 +1,289 @@
+<div>
+  <!-- Heading Section -->
+  <section class="pt-10 md:pt-15 lg:pt-20 pb-10">
+    <div class="container text-center">
+      <h1 class="text-4xl md:text-5xl font-serif font-bold text-gray-800">
+        Contact Us
+      </h1>
+      <p class="md:text-lg italic mt-4 max-w-180 mx-auto text-gray-600">
+        We&apos;d love to hear from you. Whether you&apos;re making a
+        reservation, asking a question, or sharing feedback — we&apos;re here to
+        help.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section class="py-10 bg-white">
+    <div class="container grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10">
+      <!-- Contact Form -->
+      <div class="bg-gray-100 p-7 rounded-lg space-y-8">
+        <!-- Form Heading -->
+        <div>
+          <h2 class="font-serif font-bold text-2xl md:text-3xl text-gray-800">
+            Get In Touch
+          </h2>
+          <p class="text-sm md:text-base italic text-gray-600">
+            Fill out the form below, and we&apos;ll get back to you as soon as
+            possible.
+          </p>
+        </div>
+
+        <!-- Form application -->
+        <form class="space-y-3" id="contact-form">
+          <!-- Name -->
+          <div class="flex flex-col gap-2">
+            <label for="name" class="font-medium">
+              Full name <span class="text-red-500">*</span>
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="bg-white outline-0 py-2 px-3 rounded-md border border-white"
+            />
+            <span id="name-error" class="hidden text-red-500 text-sm"></span>
+          </div>
+          <!-- Email -->
+          <div class="flex flex-col gap-2">
+            <label for="email" class="font-medium">
+              Email <span class="text-red-500">*</span>
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="bg-white outline-0 py-2 px-3 rounded-md border border-white"
+            />
+            <span id="email-error" class="hidden text-red-500 text-sm"></span>
+          </div>
+          <!-- Phone -->
+          <div class="flex flex-col gap-2">
+            <label for="Phone" class="font-medium">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              class="bg-white outline-0 py-2 px-3 rounded-md border border-white"
+            />
+            <span id="phone-error" class="hidden text-red-500 text-sm"></span>
+          </div>
+          <!-- Message -->
+          <div class="flex flex-col gap-2">
+            <label for="message" class="font-medium">
+              How can we help you? <span class="text-red-500">*</span>
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              rows="3"
+              required
+              class="bg-white outline-0 py-2 px-3 rounded-md border border-white"
+            ></textarea>
+            <span id="message-error" class="hidden text-red-500 text-sm"></span>
+          </div>
+          <button
+            type="submit"
+            id="contact-submit-button"
+            class="w-full bg-amber-700 text-white py-2 px-4 mt-2 rounded-md font-bold text-lg hover:bg-amber-600 transition-all duration-300"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+
+      <!-- Information -->
+      <div class="flex flex-col gap-5 justify-between">
+        <!-- Address -->
+        <div class="flex gap-3 p-5 bg-gray-100 rounded-lg">
+          <div class="text-gray-800">
+            <!-- Pin Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-map-pin text-amber-600"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+              <path
+                d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z"
+              />
+            </svg>
+          </div>
+          <address class="flex flex-col gap-1">
+            <h3 class="text-xl font-bold font-serif not-italic">Address</h3>
+            <p class="text-gray-600 italic">
+              123 Gourmet Street<br />
+              Culinary District<br />
+              New York, NY 10001
+            </p>
+          </address>
+        </div>
+        <!-- Phone -->
+        <div class="flex gap-3 p-5 bg-gray-100 rounded-lg">
+          <div class="text-gray-800">
+            <!-- Phone Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-phone text-amber-600"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"
+              />
+            </svg>
+          </div>
+          <div class="flex flex-col gap-1">
+            <h3 class="text-xl font-bold font-serif">Phone</h3>
+            <a href="tel:+15551234567" class="italic">(555) 123-4567</a>
+          </div>
+        </div>
+        <!-- Email -->
+        <div class="flex gap-3 p-5 bg-gray-100 rounded-lg">
+          <div class="text-gray-800">
+            <!-- Clock Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-mail text-amber-600"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"
+              />
+              <path d="M3 7l9 6l9 -6" />
+            </svg>
+          </div>
+          <div class="flex flex-col gap-1">
+            <h3 class="text-xl font-bold font-serif">Email</h3>
+            <a href="mailto:hello@oliveoak.com" class="italic">
+              hello@oliveoak.com
+            </a>
+          </div>
+        </div>
+        <!-- Hours -->
+        <div class="flex gap-3 p-5 bg-gray-100 rounded-lg">
+          <div class="text-gray-800">
+            <!-- Clock Icon -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-clock text-amber-600"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+              <path d="M12 7v5l3 3" />
+            </svg>
+          </div>
+          <div class="flex flex-col gap-1">
+            <h3 class="text-xl font-bold font-serif">Hours</h3>
+            <p class="text-gray-600 italic">
+              <strong>Mon &mdash; Fri</strong>: 12 PM &mdash; 11 PM
+            </p>
+            <p class="text-gray-600 italic">
+              <strong>Sat &mdash; Sun</strong>: 1 PM &mdash; 12 AM
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Map Section -->
+  <section class="container py-10 space-y-10">
+    <!-- Heading -->
+    <div class="text-center">
+      <h2 class="text-3xl md:text-4xl font-serif font-bold text-gray-800">
+        Find Us on the Map
+      </h2>
+      <p class="md:text-lg italic mt-4 max-w-180 mx-auto text-gray-600">
+        We&apos;re located in the heart of the city — easy to reach, and always
+        worth the visit.
+      </p>
+    </div>
+
+    <!-- Map -->
+    <div class="h-100 rounded-md overflow-hidden shadow-2xl">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1841651228076!2d-73.98784268459395!3d40.75889797932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25855c6480299%3A0x55194ec5a1ae072e!2sTimes%20Square!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
+        width="100%"
+        height="100%"
+        allowfullscreen="false"
+        frameborder="0"
+        referrerpolicy="no-referrer-when-downgrade"
+        loading="lazy"
+        title="Map Showing Olive & Oak"
+      ></iframe>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="container pt-10 pb-20 space-y-10">
+    <!-- Heading -->
+    <div class="text-center">
+      <h2 class="text-3xl md:text-4xl font-serif font-bold text-gray-800">
+        Ready to reserve a table?
+      </h2>
+      <p class="md:text-lg italic mt-4 max-w-180 mx-auto text-gray-600">
+        Book now and enjoy an unforgettable dining experience.
+      </p>
+    </div>
+
+    <!-- CTA -->
+    <a
+      href="tel:+15551234567"
+      class="flex items-center gap-2 w-fit mx-auto bg-amber-700 text-white py-2 px-4 rounded-md font-bold text-lg mt-10 hover:bg-amber-600 transition-all duration-300"
+    >
+      <!-- Phone Icon -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="icon icon-tabler icons-tabler-outline icon-tabler-phone"
+      >
+        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+        <path
+          d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2"
+        />
+      </svg>
+      <span>Reserve Now</span>
+    </a>
+  </section>
+</div>

@@ -1,0 +1,146 @@
+@import "tailwindcss";
+
+/* ========================== */
+/* Libre Baskerville (static) */
+/* ========================== */
+
+/* Regular */
+@font-face {
+  font-family: "Libre Baskerville";
+  src: url("/fonts/Libre_Baskerville/LibreBaskerville-Regular.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold */
+@font-face {
+  font-family: "Libre Baskerville";
+  src: url("/fonts/Libre_Baskerville/LibreBaskerville-Bold.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ==================== */
+/* Open Sans (variable) */
+/* ==================== */
+
+/* Normal */
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/Open_Sans/OpenSans-VariableFont_wdth,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Italic */
+@font-face {
+  font-family: "Open Sans";
+  src: url("/fonts/Open_Sans/OpenSans-Italic-VariableFont_wdth,wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --serif-font: "Libre Baskerville";
+  --sans-font: "Open Sans";
+  --header-height: 85px;
+}
+
+@theme {
+  --font-serif: var(--serif-font);
+  --font-sans: var(--sans-font);
+
+  /* Toast animations */
+  --animate-toast-enter: toast-slide-in 300ms ease-out;
+  --animate-toast-exit: toast-slide-out 300ms ease-in forwards;
+
+  @keyframes toast-slide-in {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes toast-slide-out {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--sans-font), Arial, Helvetica, sans-serif;
+  }
+  a {
+    display: inline-block;
+  }
+  button {
+    cursor: pointer;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-[1440px] mx-auto px-6;
+  }
+
+  .nav-link {
+    @apply font-medium text-gray-600 hover:text-black transition-all duration-200;
+  }
+
+  .nav-active-link {
+    @apply border-b-2 font-bold text-black;
+  }
+
+  .menu-col {
+    @apply p-10 border-b border-gray-500 last-of-type:border-0;
+  }
+
+  .menu-category-title {
+    @apply text-2xl md:text-3xl font-serif text-center font-bold;
+  }
+
+  .menu-category-list {
+    @apply mt-10 space-y-5;
+  }
+
+  .menu-category-item-line-1 {
+    @apply flex items-center justify-between gap-1.5;
+  }
+
+  .menu-category-item-name {
+    @apply md:text-xl font-serif font-bold text-gray-950;
+  }
+
+  .menu-category-item-separator {
+    @apply flex-1 border-t-2 border-dotted border-gray-950;
+  }
+
+  .menu-category-item-price {
+    @apply md:text-xl font-serif font-bold text-gray-950;
+  }
+
+  .menu-category-item-description {
+    @apply text-gray-900 italic text-sm md:text-base;
+  }
+}
