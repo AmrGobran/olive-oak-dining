@@ -49,8 +49,8 @@
 }
 
 :root {
-  --serif-font: "Libre Baskerville";
-  --sans-font: "Open Sans";
+  --serif-font: "Libre Baskerville", Georgia, "Times New Roman", serif;
+  --sans-font: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --header-height: 85px;
 }
 
