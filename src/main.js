@@ -10,7 +10,6 @@ class Router {
     };
     this.currentPage = null;
     this.componentCache = {};
-    this.basePath = "./";
     this.init();
 
     // Icons
@@ -62,9 +61,7 @@ class Router {
       return this.componentCache[templateName];
     }
 
-    const response = await fetch(
-      `${this.basePath}src/templates/${templateName}.html`
-    );
+    const response = await fetch(`/templates/${templateName}.html`);
     if (!response.ok) {
       throw new Error(`Failed to load template: ${templateName}`);
     }
@@ -599,9 +596,7 @@ class Router {
   async loadComponent(name) {
     if (this.componentCache[name]) return this.componentCache[name];
 
-    const res = await fetch(
-      `${this.basePath}src/templates/components/${name}.html`
-    );
+    const res = await fetch(`/templates/components/${name}.html`);
     if (!res.ok) {
       throw new Error(`Failed to load component: ${name}`);
     }
