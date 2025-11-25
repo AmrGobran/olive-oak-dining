@@ -37,75 +37,7 @@ A modern, responsive restaurant website built with HTML, TailwindCSS v4, and van
 ## 📁 Project Structure
 
 ```bash
-restaurant-1/
-├─ public/
-│  ├─ fonts/
-│  │  ├─ Libre_Baskerville/
-│  │  │  ├─ LibreBaskerville-Bold.ttf
-│  │  │  ├─ LibreBaskerville-Italic.ttf
-│  │  │  ├─ LibreBaskerville-Regular.ttf
-│  │  │  └─ OFL.txt
-│  │  └─ Open_Sans/
-│  │     ├─ static/
-│  │     │  ├─ OpenSans_Condensed-Bold.ttf
-│  │     │  ├─ OpenSans_Condensed-BoldItalic.ttf
-│  │     │  ├─ OpenSans_Condensed-ExtraBold.ttf
-│  │     │  ├─ OpenSans_Condensed-ExtraBoldItalic.ttf
-│  │     │  ├─ OpenSans_Condensed-Italic.ttf
-│  │     │  ├─ OpenSans_Condensed-Light.ttf
-│  │     │  ├─ OpenSans_Condensed-LightItalic.ttf
-│  │     │  ├─ OpenSans_Condensed-Medium.ttf
-│  │     │  ├─ OpenSans_Condensed-MediumItalic.ttf
-│  │     │  ├─ OpenSans_Condensed-Regular.ttf
-│  │     │  ├─ OpenSans_Condensed-SemiBold.ttf
-│  │     │  ├─ OpenSans_Condensed-SemiBoldItalic.ttf
-│  │     │  ├─ OpenSans_SemiCondensed-Bold.ttf
-│  │     │  ├─ OpenSans_SemiCondensed-BoldItalic.ttf
-│  │     │  ├─ OpenSans_SemiCondensed-ExtraBold.ttf
-│  │     │  ├─ OpenSans_SemiCondensed-ExtraBoldItalic.ttf
-│  │     │  ├─ OpenSans_SemiCondensed-Italic.ttf
-│  │     │  ├─ OpenSans_SemiCondensed-Light.ttf
-│  │     │  ├─ OpenSans_SemiCondensed-LightItalic.ttf
-│  │     │  ├─ OpenSans_SemiCondensed-Medium.ttf
-│  │     │  ├─ OpenSans_SemiCondensed-MediumItalic.ttf
-│  │     │  ├─ OpenSans_SemiCondensed-Regular.ttf
-│  │     │  ├─ OpenSans_SemiCondensed-SemiBold.ttf
-│  │     │  ├─ OpenSans_SemiCondensed-SemiBoldItalic.ttf
-│  │     │  ├─ OpenSans-Bold.ttf
-│  │     │  ├─ OpenSans-BoldItalic.ttf
-│  │     │  ├─ OpenSans-ExtraBold.ttf
-│  │     │  ├─ OpenSans-ExtraBoldItalic.ttf
-│  │     │  ├─ OpenSans-Italic.ttf
-│  │     │  ├─ OpenSans-Light.ttf
-│  │     │  ├─ OpenSans-LightItalic.ttf
-│  │     │  ├─ OpenSans-Medium.ttf
-│  │     │  ├─ OpenSans-MediumItalic.ttf
-│  │     │  ├─ OpenSans-Regular.ttf
-│  │     │  ├─ OpenSans-SemiBold.ttf
-│  │     │  └─ OpenSans-SemiBoldItalic.ttf
-│  │     ├─ OFL.txt
-│  │     ├─ OpenSans-Italic-VariableFont_wdth,wght.ttf
-│  │     ├─ OpenSans-VariableFont_wdth,wght.ttf
-│  │     └─ README.txt
-│  ├─ images/
-│  │  ├─ dishes/
-│  │  │  ├─ herb-crusted-lamb.avif
-│  │  │  ├─ herb-crusted-lamb.jpg
-│  │  │  ├─ herb-crusted-lamb.webp
-│  │  │  ├─ seared-salmon.avif
-│  │  │  ├─ seared-salmon.jpg
-│  │  │  ├─ seared-salmon.webp
-│  │  │  ├─ truffle-risotto.avif
-│  │  │  ├─ truffle-risotto.jpg
-│  │  │  └─ truffle-risotto.webp
-│  │  ├─ hero.jpg
-│  │  ├─ philosophy.avif
-│  │  ├─ philosophy.jpg
-│  │  ├─ philosophy.webp
-│  │  ├─ story.avif
-│  │  ├─ story.jpg
-│  │  └─ story.webp
-│  └─ vite.svg
+project/
 ├─ src/
 │  ├─ templates/
 │  │  ├─ components/
@@ -117,13 +49,9 @@ restaurant-1/
 │  │  └─ menu.html
 │  ├─ main.js
 │  └─ style.css
-├─ .gitignore
 ├─ index.html
-├─ package-lock.json
 ├─ package.json
-├─ README.md
-└─ vite.config.js
-
+└─ README.md
 ```
 
 ## 🎯 Key Components
