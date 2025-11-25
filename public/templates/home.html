@@ -102,7 +102,12 @@
             media="(max-width: 1024px)"
             type="image/avif"
           />
-          <source srcset="/images/story-1536.avif" type="image/avif" />
+          <source
+            srcset="/images/story-1440.avif"
+            media="(max-width: 1440px)"
+            type="image/avif"
+          />
+          <source srcset="/images/story.avif" type="image/avif" />
 
           <!-- WebP fallback -->
           <source
@@ -120,28 +125,22 @@
             media="(max-width: 1024px)"
             type="image/webp"
           />
-          <source srcset="/images/story-1536.webp" type="image/webp" />
+          <source
+            srcset="/images/story-1440.webp"
+            media="(max-width: 1440px)"
+            type="image/webp"
+          />
+          <source srcset="/images/story.webp" type="image/webp" />
 
           <!-- JPG fallback -->
           <img
             src="/images/story-728.jpg"
             alt="From Kitchen to Heart"
-            loading="lazy"
-            class="w-full h-full object-cover rounded-xl"
-          />
-        </picture>
-
-        <picture>
-          <!-- Fallback Images -->
-          <source srcset="/images/story.avif" type="image/avif" />
-          <source srcset="/images/story.webp" type="image/webp" />
-          <img
-            src="/images/story.jpg"
-            alt="From Kitchen to Heart"
             title="Photo by Igor Rand on Unsplash"
             loading="lazy"
             class="w-full h-full object-cover rounded-xl"
           />
+        </picture>
         </picture>
       </div>
     </div>
